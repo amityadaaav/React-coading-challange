@@ -1,3 +1,35 @@
+React Code Challenge - Task 1
+Welcome to the React Code Challenge! This challenge is designed to assess your understanding of React components, state management, and fetching data from an API.
+
+Challenge Description
+Your task is to create a React component that fetches a list of items from a provided API endpoint and displays them in a simple UI. Follow the instructions below to complete the challenge.
+
+Requirements
+Fetch a list of items from the provided API endpoint (/users).
+Create a React component to receive the user data named UserInfo.
+Display the fetched items in a list format on the UI.
+Each item should display at least two properties (e.g., id and name).
+Implement loading and error handling states for the data fetching process.
+API Endpoint
+Use the following API endpoint to fetch the list of items:
+
+https://jsonplaceholder.typicode.com/users
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
