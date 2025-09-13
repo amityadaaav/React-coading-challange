@@ -28,7 +28,7 @@ const Search = () => {
     const handleDelete=(id)=>{
             console.log("data removed")
             const newData = data.filter((user) => user.id !== id);
-         setData(newData);
+         setData(newData); 
     }
   return (
 
