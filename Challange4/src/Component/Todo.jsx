@@ -1,9 +1,18 @@
 import React from 'react'
-import { useState } from 'react'
+import { useState ,useEffect} from 'react'
 // import App from "../App.css"
 const Todo = () => {
     const [data,setData]=useState("")
-    const [datatodo,setTodo]=useState([])
+     // ✅ Load from localStorage at start
+  const [datatodo, setTodo] = useState(() => {
+    const saved = localStorage.getItem("data");
+    return saved ? JSON.parse(saved) : [];
+  });
+
+      useEffect(() => {
+        localStorage.setItem("data", JSON.stringify(datatodo));
+         }, [datatodo]);
+
     const handleTodo=(e)=>{
         e.preventDefault()
         if(data.trim()==="") return;
